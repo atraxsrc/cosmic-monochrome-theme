@@ -1,6 +1,6 @@
 <div align="center">
 
-# Pop!_OS · COSMIC · Monochrome
+# COSMIC · Monochrome
 
 <img width="3802" height="2115" alt="githubmono" src="https://github.com/user-attachments/assets/ca22c3a3-0848-43f7-a675-6f079dcc553e" />
 
