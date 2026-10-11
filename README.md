@@ -62,6 +62,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── scripts
 │   └── update_system.sh         # nala + flatpak, monochrome ANSI
 ├── zsh
@@ -195,6 +196,23 @@ up any existing `~/.config/fastfetch/config.jsonc` to `config.jsonc.bak`.
 fastfetch
 ```
 
+### Neovim
+
+`nvim/` carries the rice into Neovim: a dependency-free colorscheme built from
+the palette (`nvim/colors/monochrome.lua`), a LazyVim spec that selects it and makes
+sure the treesitter parsers for the files in this repo are installed
+(`nvim/lua/plugins/monochrome.lua`), and a small RON syntax file so `cosmic/*.ron`
+is coloured even before the parser exists. `:terminal` inside Neovim uses the
+Monochrome Dark scheme.
+
+```bash
+./nvim/install.sh
+# restart nvim; LazyVim switches to the monochrome colorscheme
+```
+
+Without LazyVim, copy `nvim/colors/monochrome.lua` to `~/.config/nvim/colors/` and
+run `:colorscheme monochrome`.
+
 ### btop
 
 `btop/Monochrome.theme`: near-black background, gray boxes, meters ramp from
@@ -247,6 +265,7 @@ cd cosmic-monochrome-theme
 ./zsh/install.sh
 ./lsd/install.sh
 ./fastfetch/install.sh
+./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes/
 
 # icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
