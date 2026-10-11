@@ -216,8 +216,13 @@ cd Tela-icon-theme && ./install.sh black
 # Settings → Desktop → Appearance → Icons → Tela-black-dark
 ```
 
-Wallpapers: https://github.com/atraxsrc/cool-wallpapers (the gray astronauts in
-[`cosmic/`](https://github.com/atraxsrc/cool-wallpapers/tree/main/cosmic) suit this rice)
+Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers):
+
+| File | What it is |
+|------|------------|
+| [`cosmic-astronaut-gray-standard-5376x3072.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-gray-standard-5376x3072.jpg) | The gray COSMIC astronaut, the natural fit |
+| [`monochrome-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/monochrome/monochrome-reaper-skull-3440x1440.png) | Harbor Dark reaper in greys only |
+
 
 ---
 
