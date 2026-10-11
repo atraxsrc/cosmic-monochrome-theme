@@ -2,8 +2,6 @@
 
 # COSMIC · Monochrome
 
-<img width="3802" height="2115" alt="githubmono" src="https://github.com/user-attachments/assets/ca22c3a3-0848-43f7-a675-6f079dcc553e" />
-
 Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-aaaaaa?style=for-the-badge&logo=popos&logoColor=white)
@@ -15,6 +13,7 @@ Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox.
 </div>
 
 ---
+![Pop!_OS COSMIC desktop with the Monochrome theme](assets/screenshot.png)
 
 ## Palette
 
@@ -40,6 +39,9 @@ There is no hue. Status colours are lighter grays, not green / red.
 
 ```
 .
+├── assets
+│   ├── screenshot.png           # README screenshot
+│   └── wallpaper.png            # the reaper on the bare desktop
 ├── btop
 │   └── Monochrome.theme         # btop colour theme
 ├── cosmic
@@ -241,9 +243,12 @@ Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers
 
 | File | What it is |
 |------|------------|
-| [`cosmic-astronaut-gray-standard-5376x3072.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-gray-standard-5376x3072.jpg) | The gray COSMIC astronaut, the natural fit |
-| [`monochrome-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/monochrome/monochrome-reaper-skull-3440x1440.png) | Harbor Dark reaper in greys only |
+| [`monochrome-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/monochrome/monochrome-reaper-skull-3440x1440.png) | Harbor Dark reaper in greys on the window background, the one in the screenshot |
+| [`cosmic-astronaut-gray-standard-5376x3072.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-gray-standard-5376x3072.jpg) | The gray COSMIC astronaut. Its light top edge shows through the frosted panel, so the panel looks pale behind white applets |
 
+Settings → Wallpaper → Add image → the file you downloaded.
+
+![The reaper wallpaper on the Monochrome desktop, panel only](assets/wallpaper.png)
 
 ---
 

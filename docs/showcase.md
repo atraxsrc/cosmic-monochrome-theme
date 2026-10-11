@@ -42,8 +42,8 @@ flowchart LR
 - [x] `./cosmic/install.sh` for fonts, **Tela-black-dark** icons and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
 - [x] Cursor: system default
-- [ ] Wallpaper: `cool-wallpapers/cosmic/monochrome/cosmic-astronaut-gray-standard`
-- [ ] Screenshot for the README
+- [x] Wallpaper: `cool-wallpapers/cosmic/monochrome/monochrome-reaper-skull`
+- [x] Screenshot for the README
 
 ## The baseline every rice shares
 
