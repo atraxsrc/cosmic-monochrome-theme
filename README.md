@@ -67,6 +67,8 @@ There is no hue. Status colours are lighter grays, not green / red.
 ├── zsh
 │   ├── monochrome.zsh           # LS_COLORS, highlighting colours, aliases, starship
 │   └── install.sh
+├── docs
+│   └── showcase.md              # the rice describing itself, for the Postilla pane of the screenshot
 ├── LICENSE
 └── README.md
 ```
