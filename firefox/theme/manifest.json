@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Cosmic Monochrome",
-  "version": "1.0",
+  "version": "1.1",
   "description": "Pure greyscale dark theme from the COSMIC Monochrome rice: grey icons, one bright accent.",
   "browser_specific_settings": {
     "gecko": {
@@ -24,6 +24,8 @@
       "toolbar_field": "#2e2e2e",
       "toolbar_field_text": "#cccccc",
       "toolbar_field_border_focus": "#dddddd",
+      "toolbar_field_highlight": "#dddddd",
+      "toolbar_field_highlight_text": "#111111",
       "tab_line": "#dddddd",
       "popup": "#1c1c1c",
       "popup_text": "#cccccc",
