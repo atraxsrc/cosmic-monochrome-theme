@@ -24,7 +24,7 @@ Stylesheets:
 ```
 firefox/
 ├── theme/            WebExtension theme source (Cosmic Monochrome)
-│   ├── manifest.json     harbordark's 24 colour keys + a pinned URL bar ring
+│   ├── manifest.json     DarkGold's 24 colour keys + a pinned URL bar ring
 │   └── icons/            32 / 48 / 64 / 96 / 128, cropped from monochrome-reaper-skull
 ├── chrome/
 │   ├── userChrome.css    browser UI: rounded corners, grey menu hover
@@ -42,7 +42,7 @@ Two layers, use one or both:
 
 ## Theme
 
-Same colour keys and roles as DarkGold's harbordark. The palette has no hue,
+Same colour keys and roles as DarkGold's Firefox theme. The palette has no hue,
 so calm and loud are two levels of grey: icons take the calm accent
 (`#AAAAAA`, the rice's accent; gold in DarkGold), and everything "hot" (tab
 line, pressed button, menu and sidebar selection, loading) takes the loud one
