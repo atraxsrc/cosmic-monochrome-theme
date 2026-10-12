@@ -50,6 +50,8 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   └── install.sh
 ├── cosmic-term
 │   └── Monochrome-Dark-term.ron # COSMIC Terminal colour scheme
+├── icons
+│   └── install.sh               # Cosmic-Monochrome icon pack from cosmic-icon-themes
 ├── fastfetch
 │   ├── config.jsonc             # gray fastfetch config
 │   ├── cosmic.txt               # COSMIC logo
@@ -101,12 +103,12 @@ Export from Appearance if you tweak backgrounds / tints so you do not lose them.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Normal UI`, monospace `Maple Mono Normal NFM` |
-| Icons | Tela black (dark) |
+| Icons | Cosmic-Monochrome-Silver |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Monochrome Dark |
 
 Install the [Maple fonts](https://github.com/subframe7536/maple-font) and the
-Tela icons (see Icons below) and import the terminal scheme first, then:
+Cosmic-Monochrome icons (see Icons below) and import the terminal scheme first, then:
 
 ```bash
 ./cosmic/install.sh
@@ -232,13 +234,21 @@ cp btop/Monochrome.theme ~/.config/btop/themes/
 
 ## Icons and wallpaper
 
-Icons: [Tela](https://github.com/vinceliuice/Tela-icon-theme), black variant:
+Icons: **Cosmic-Monochrome**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
+by Fausto Korpsvart recolored to this palette in
+[cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
+three colors: **Silver** `#AAAAAA` (default), **White** `#DDDDDD` and **Dark** `#2A2A2A` with light symbols.
+
+![Cosmic-Monochrome folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-Monochrome.png)
 
 ```bash
-git clone https://github.com/vinceliuice/Tela-icon-theme.git
-cd Tela-icon-theme && ./install.sh black
-# Settings → Desktop → Appearance → Icons → Tela-black-dark
+./icons/install.sh                 # Silver folders
+./icons/install.sh --variant Dark  # or White
 ```
+
+It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
+installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
+Restart open apps afterwards (Files caches icons per window).
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers):
 
@@ -275,7 +285,8 @@ cd cosmic-monochrome-theme
 ./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes/
 
-# icons (see Icons above) + Maple fonts (https://github.com/subframe7536/maple-font), then
+./icons/install.sh                  # icons (see Icons above)
+# Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
 ./cosmic/install.sh
 ```
@@ -292,7 +303,7 @@ mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes
 | [lsd](https://github.com/lsd-rs/lsd) | `ls` with icons and colours |
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
-| [Tela](https://github.com/vinceliuice/Tela-icon-theme) | Icon pack (black) |
+| [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-Monochrome), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
 
 ## License
 

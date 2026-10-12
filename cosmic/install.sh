@@ -18,6 +18,6 @@ done
 
 cat <<'EOF'
 
-Done. Needs the Maple fonts and Tela black icons installed, and the Monochrome Dark
+Done. Needs the Maple fonts and Cosmic-Monochrome icons (./icons/install.sh) installed, and the Monochrome Dark
 terminal scheme imported, or COSMIC falls back to its defaults.
 EOF
