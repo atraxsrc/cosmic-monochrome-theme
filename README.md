@@ -42,6 +42,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 ├── assets
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the reaper on the bare desktop
+├── backgrounds/                 # wallpapers, monochrome-<subject>.png (see Icons and wallpaper)
 ├── btop
 │   └── Monochrome.theme         # btop colour theme
 ├── cosmic
@@ -259,14 +260,31 @@ Restart open apps afterwards (Files caches icons per window).
 Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
-Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers):
+Wallpapers ship in [`backgrounds/`](backgrounds/), named `monochrome-<subject>.png`:
+the thirteen subjects every dark rice has, rendered in greys only.
+The reaper and the blueprint are Harbor Dark subjects, the eagle and the
+portrait are from The Greek (both [HANCORE-linux](https://github.com/HANCORE-linux),
+MIT); the samurai, sushi, geisha, mug and street are from the Tokyo Night set in
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers). Each was rendered
+again in this palette, then upscaled.
 
-| File | What it is |
-|------|------------|
-| [`monochrome-reaper-skull-3440x1440.png`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/monochrome/monochrome-reaper-skull-3440x1440.png) | Harbor Dark reaper in greys on the window background, the one in the screenshot |
-| [`cosmic-astronaut-gray-standard-5376x3072.jpg`](https://github.com/atraxsrc/cool-wallpapers/blob/main/cosmic/cosmic-astronaut-gray-standard-5376x3072.jpg) | The gray COSMIC astronaut. Its light top edge shows through the frosted panel, so the panel looks pale behind white applets |
+| File | Size | What it is |
+|------|------|------------|
+| [`monochrome-reaper-skull.png`](backgrounds/monochrome-reaper-skull.png) | 5120x3200 | Harbor Dark reaper in greys, the one in the screenshot |
+| [`monochrome-hyundai-blueprint.png`](backgrounds/monochrome-hyundai-blueprint.png) | 5120x3200 | Hyundai N Vision 74 blueprint, line work |
+| [`monochrome-cosmic-astronaut.png`](backgrounds/monochrome-cosmic-astronaut.png) | 5376x3312 | The COSMIC astronaut in greys. Its light top edge shows through the frosted panel, so the panel looks pale behind white applets |
+| [`monochrome-samurai.png`](backgrounds/monochrome-samurai.png) | 5120x3200 | Samurai silhouette against a full moon |
+| [`monochrome-sushi-switch.png`](backgrounds/monochrome-sushi-switch.png) | 5120x3200 | Sushi on a Switch, clouds and wave pattern |
+| [`monochrome-geisha-vivid.png`](backgrounds/monochrome-geisha-vivid.png) | 5120x3200 | Geisha in a patterned kimono inside a circle |
+| [`monochrome-js-mug.png`](backgrounds/monochrome-js-mug.png) | 5120x3200 | JS mug with a splash |
+| [`monochrome-neon-city.png`](backgrounds/monochrome-neon-city.png) | 5120x3200 | Rainy street of lit shopfronts |
+| [`monochrome-eagle.png`](backgrounds/monochrome-eagle.png) | 5376x3312 | Ink eagle head with splashes |
+| [`monochrome-anime.png`](backgrounds/monochrome-anime.png) | 5376x3312 | Ink portrait, long hair, splashes |
+| [`monochrome-city.png`](backgrounds/monochrome-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
+| [`monochrome-panel.png`](backgrounds/monochrome-panel.png) | 5120x3200 | Layered circuit panels, one lit strip |
+| [`monochrome-tower.png`](backgrounds/monochrome-tower.png) | 5120x3200 | Isometric dark tower on a platform |
 
-Settings → Wallpaper → Add image → the file you downloaded.
+Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
 ![The reaper wallpaper on the Monochrome desktop, panel only](assets/wallpaper.png)
 
@@ -296,6 +314,9 @@ cd cosmic-monochrome-theme
 ./fastfetch/install.sh
 ./nvim/install.sh
 mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes/
+
+# wallpaper
+# Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then
