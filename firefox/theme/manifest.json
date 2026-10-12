@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Cosmic Monochrome",
+  "version": "1.0",
+  "description": "Pure greyscale dark theme from the COSMIC Monochrome rice: grey icons, one bright accent.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "{b031e053-888d-4488-998a-c36647fa6303}"
+    }
+  },
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "64": "icons/icon-64.png",
+    "96": "icons/icon-96.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "toolbar": "#1c1c1c",
+      "toolbar_text": "#cccccc",
+      "frame": "#111111",
+      "tab_background_text": "#828282",
+      "toolbar_field": "#2e2e2e",
+      "toolbar_field_text": "#cccccc",
+      "toolbar_field_border_focus": "#dddddd",
+      "tab_line": "#dddddd",
+      "popup": "#1c1c1c",
+      "popup_text": "#cccccc",
+      "button_background_active": "#dddddd",
+      "button_background_hover": "#2e2e2e",
+      "frame_inactive": "#111111",
+      "icons_attention": "#dddddd",
+      "icons": "#aaaaaa",
+      "ntp_background": "#111111",
+      "ntp_text": "#cccccc",
+      "popup_border": "#828282",
+      "popup_highlight_text": "#111111",
+      "popup_highlight": "#dddddd",
+      "sidebar_border": "#2e2e2e",
+      "sidebar_highlight_text": "#111111",
+      "sidebar_highlight": "#dddddd",
+      "sidebar_text": "#cccccc",
+      "tab_loading": "#dddddd"
+    }
+  }
+}

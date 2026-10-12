@@ -55,9 +55,10 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── cosmic.txt               # COSMIC logo
 │   └── install.sh
 ├── firefox
+│   ├── theme                    # Cosmic Monochrome theme add-on (manifest + icons)
 │   ├── chrome
-│   │   ├── userChrome.css       # rounded chrome, solid menu hover
-│   │   └── userContent.css      # new tab accent
+│   │   ├── userChrome.css       # rounded chrome, grey menu hover
+│   │   └── userContent.css      # new tab accents, blank tiles
 │   ├── install.sh
 │   └── README.md
 ├── lsd

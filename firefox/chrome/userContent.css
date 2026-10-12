@@ -1,8 +1,13 @@
 /* ==========================================================================
    Monochrome Dark - userContent.css
-   Based on Cosmic Night v2 (variables only)
+   Ported from the DarkGold baseline, recoloured for the COSMIC Monochrome
+   palette (dark, pure greyscale)
 
-   Color only. No size / position changes.
+   New tab / home / private pages only:
+     - grey accent, focus and link colours
+     - grey focus ring on shortcut tiles, grey personalize button
+     - shortcut artwork hidden (tiles stay, icons go blank)
+   No size / position changes.
 
    Install:  chrome/userContent.css   (same pref + restart as userChrome.css)
    ========================================================================== */
@@ -12,18 +17,52 @@
                url-prefix("about:privatebrowsing") {
 
   :root {
-    --newtab-primary-action-background: #aaaaaa !important;
+    --newtab-primary-action-background: #AAAAAA !important;
     --newtab-primary-action-background-dimmed: rgba(170, 170, 170, 0.25) !important;
 
-    --newtab-focus-border: #aaaaaa !important;
-    --newtab-focus-outline: #aaaaaa !important;
-    --newtab-textbox-focus-color: #aaaaaa !important;
+    --color-accent-primary: #AAAAAA !important;
+    --color-accent-primary-hover: #CCCCCC !important;
+    --color-accent-primary-active: #CCCCCC !important;
 
-    --in-content-accent-color: #aaaaaa !important;
-    --in-content-accent-color-active: #cccccc !important;
-    --in-content-focus-outline-color: #aaaaaa !important;
+    --newtab-focus-border: #AAAAAA !important;
+    --newtab-focus-outline: #AAAAAA !important;
+    --newtab-textbox-focus-color: #AAAAAA !important;
 
-    --link-color: #bdbdbd !important;
-    --link-color-hover: #dddddd !important;
+    --in-content-accent-color: #AAAAAA !important;
+    --in-content-accent-color-active: #CCCCCC !important;
+    --in-content-focus-outline-color: #AAAAAA !important;
+
+    --link-color: #BDBDBD !important;
+    --link-color-hover: #DDDDDD !important;
+
+    --focus-outline-color: #AAAAAA !important;
+    --focus-outline: 2px solid #AAAAAA !important;
+    --newtab-button-focus-border: #AAAAAA !important;
+    --button-background-color: #AAAAAA !important;
+    --button-text-color: #111111 !important;
+  }
+
+  .top-site-outer:is(:focus, :focus-visible, .active) .tile,
+  .top-site-outer .top-site-button:focus .tile,
+  .top-site-outer .top-site-button:focus-visible .tile {
+    outline: 2px solid #AAAAAA !important;
+    border-color: #AAAAAA !important;
+  }
+
+  .personalize-button {
+    background-color: #AAAAAA !important;
+    color: #111111 !important;
+  }
+
+  /* Hide shortcut artwork so tiles stay blank */
+  .top-site-icon,
+  .top-site-icon.rich-icon,
+  .top-site-icon.default-icon,
+  .screenshot,
+  .screenshot.active,
+  .letter-fallback {
+    background-image: none !important;
+    background-color: transparent !important;
+    opacity: 0 !important;
   }
 }
