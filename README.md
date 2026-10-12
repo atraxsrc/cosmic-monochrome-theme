@@ -249,6 +249,8 @@ three colors: **Silver** `#AAAAAA` (default), **White** `#DDDDDD` and **Dark** `
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
 installs it to `~/.local/share/icons/` and sets it as the COSMIC icon theme.
 Restart open apps afterwards (Files caches icons per window).
+Add `--system` to install to `/usr/share/icons` instead, for every user and the
+login screen (asks for sudo); `--user` is the default.
 
 Wallpapers live in [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers):
 
