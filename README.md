@@ -7,7 +7,7 @@ Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox.
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-aaaaaa?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-bdbdbd?style=for-the-badge)
 ![Monochrome](https://img.shields.io/badge/Theme-Monochrome_Dark-828282?style=for-the-badge)
-![Firefox](https://img.shields.io/badge/Firefox-Monochrome_Dark-cccccc?style=for-the-badge&logo=firefox-browser&logoColor=white)
+![Firefox](https://img.shields.io/badge/Firefox-Monochrome_Dark-dddddd?style=for-the-badge&logo=firefox-browser&logoColor=white)
 ![License](https://img.shields.io/badge/License-MIT-636363?style=for-the-badge)
 
 </div>
