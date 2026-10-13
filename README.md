@@ -2,7 +2,7 @@
 
 # COSMIC · Monochrome
 
-Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox.
+Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox, cursor.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-aaaaaa?style=for-the-badge&logo=popos&logoColor=white)
 ![COSMIC](https://img.shields.io/badge/COSMIC-1.0.0-bdbdbd?style=for-the-badge)
@@ -40,6 +40,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 ```
 .
 ├── assets
+│   ├── cursors/                 # cursor previews
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the reaper on the bare desktop
 ├── backgrounds/                 # wallpapers, monochrome-<subject>.png (see Icons and wallpaper)
@@ -51,6 +52,11 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   └── install.sh
 ├── cosmic-term
 │   └── Monochrome-Dark-term.ron # COSMIC Terminal colour scheme
+├── cursors
+│   ├── Oxygen-Monochrome-*/      # cursor themes, one per icon colour, patched for COSMIC apps
+│   ├── install.sh
+│   ├── uninstall.sh
+│   └── README.md
 ├── icons
 │   └── install.sh               # Cosmic-Monochrome icon pack from cosmic-icon-themes
 ├── fastfetch
@@ -240,6 +246,23 @@ cp btop/Monochrome.theme ~/.config/btop/themes/
 
 ---
 
+## Cursor
+
+**Oxygen** cursors recoloured to the icon colours, one per folder colour of the
+Cosmic-Monochrome icon pack: **Silver** (default), **White**, **Dark**. Patched with the cursor
+names COSMIC apps ask for. COSMIC has no cursor picker yet, so the script sets it:
+
+```bash
+./cursors/install.sh                      # Silver
+./cursors/install.sh --variant White     # or another, see --list
+reboot
+```
+
+Previews, what the script touches, how to undo it and how the colours are made:
+[`cursors/README.md`](cursors/README.md).
+
+---
+
 ## Icons and wallpaper
 
 Icons: **Cosmic-Monochrome**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
@@ -318,6 +341,7 @@ mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes
 # wallpaper
 # Settings → Wallpaper → Add image → a file from backgrounds/ (see Icons and wallpaper above)
 
+./cursors/install.sh                # cursor, Silver (see Cursor above), then reboot
 ./icons/install.sh                  # icons (see Icons above)
 # Maple fonts (https://github.com/subframe7536/maple-font), then
 # fonts, icons, terminal look from cosmic/config/
@@ -337,7 +361,9 @@ mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes
 | [fastfetch](https://github.com/fastfetch-cli/fastfetch) | System info |
 | [btop](https://github.com/aristocratos/btop) | Resource monitor |
 | [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes) | Icon pack (Cosmic-Monochrome), recolored from [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa) |
+| [Oxygen-Cursors](https://github.com/wo2ni/Oxygen-Cursors) | Cursor, recoloured to the icon colours |
 
 ## License
 
-MIT
+MIT. The cursor artwork keeps the terms of KDE's Oxygen project, see
+[`cursors/README.md`](cursors/README.md).

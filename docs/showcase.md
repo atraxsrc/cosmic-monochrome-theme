@@ -41,7 +41,7 @@ flowchart LR
 - [x] Import `cosmic-term/Monochrome-term.ron`, pick **Monochrome Dark** for the profile
 - [x] `./icons/install.sh` for the **Cosmic-Monochrome** icons, `./cosmic/install.sh` for fonts and the terminal look
 - [x] `./zsh/install.sh`, `./lsd/install.sh`, `./fastfetch/install.sh`
-- [x] Cursor: system default
+- [x] Cursor: Oxygen-Monochrome-Silver
 - [x] Wallpaper: `backgrounds/monochrome-reaper-skull.png`
 - [x] Screenshot for the README
 
