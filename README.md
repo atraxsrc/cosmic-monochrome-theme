@@ -284,28 +284,13 @@ Add `--system` to install to `/usr/share/icons` instead, for every user and the
 login screen (asks for sudo); `--user` is the default.
 
 Wallpapers ship in [`backgrounds/`](backgrounds/), named `monochrome-<subject>.png`:
-the thirteen subjects every dark rice has, rendered in greys only.
-The reaper and the blueprint are Harbor Dark subjects, the eagle and the
-portrait are from The Greek (both [HANCORE-linux](https://github.com/HANCORE-linux),
-MIT); the samurai, sushi, geisha, mug and street are from the Tokyo Night set in
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers). Each was rendered
-again in this palette, then upscaled.
-
-| File | Size | What it is |
-|------|------|------------|
-| [`monochrome-reaper-skull.png`](backgrounds/monochrome-reaper-skull.png) | 5120x3200 | Harbor Dark reaper in greys, the one in the screenshot |
-| [`monochrome-hyundai-blueprint.png`](backgrounds/monochrome-hyundai-blueprint.png) | 5120x3200 | Hyundai N Vision 74 blueprint, line work |
-| [`monochrome-cosmic-astronaut.png`](backgrounds/monochrome-cosmic-astronaut.png) | 5376x3312 | The COSMIC astronaut in greys. Its light top edge shows through the frosted panel, so the panel looks pale behind white applets |
-| [`monochrome-samurai.png`](backgrounds/monochrome-samurai.png) | 5120x3200 | Samurai silhouette against a full moon |
-| [`monochrome-sushi-switch.png`](backgrounds/monochrome-sushi-switch.png) | 5120x3200 | Sushi on a Switch, clouds and wave pattern |
-| [`monochrome-geisha-vivid.png`](backgrounds/monochrome-geisha-vivid.png) | 5120x3200 | Geisha in a patterned kimono inside a circle |
-| [`monochrome-js-mug.png`](backgrounds/monochrome-js-mug.png) | 5120x3200 | JS mug with a splash |
-| [`monochrome-neon-city.png`](backgrounds/monochrome-neon-city.png) | 5120x3200 | Rainy street of lit shopfronts |
-| [`monochrome-eagle.png`](backgrounds/monochrome-eagle.png) | 5376x3312 | Ink eagle head with splashes |
-| [`monochrome-anime.png`](backgrounds/monochrome-anime.png) | 5376x3312 | Ink portrait, long hair, splashes |
-| [`monochrome-city.png`](backgrounds/monochrome-city.png) | 5376x3312 | Night skyline, one lit tower, a disc in the sky |
-| [`monochrome-panel.png`](backgrounds/monochrome-panel.png) | 5120x3200 | Layered circuit panels, one lit strip |
-| [`monochrome-tower.png`](backgrounds/monochrome-tower.png) | 5120x3200 | Isometric dark tower on a platform |
+the thirteen subjects every dark rice has, rendered in greys only:
+the Harbor Dark reaper and Hyundai blueprint, the COSMIC astronaut, the samurai,
+sushi switch, geisha, JS mug and neon street from the Tokyo Night set, The Greek
+eagle and ink portrait, and three new scenes: city, panel and tower.
+The reaper is the one in the screenshot.
+The subjects come from [HANCORE-linux](https://github.com/HANCORE-linux) (MIT) and
+[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers); each was rendered again in this palette, then upscaled.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
