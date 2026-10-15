@@ -46,6 +46,9 @@ There is no hue. Status colours are lighter grays, not green / red.
 ├── backgrounds/                 # wallpapers, monochrome-<subject>.png (see Icons and wallpaper)
 ├── btop
 │   └── Monochrome.theme         # btop colour theme
+├── claude-desktop
+│   ├── cosmic-monochrome.jsonc  # Claude Desktop theme (claude-desktop-extra), dark + light
+│   └── install.sh
 ├── cosmic
 │   ├── Monochrome-Dark.ron      # COSMIC Appearance import
 │   ├── config/                  # baseline settings: fonts, icons, terminal look
@@ -153,6 +156,24 @@ Two layers:
 ```
 
 Fully quit Firefox afterward. Details and CSS rules: [`firefox/README.md`](firefox/README.md).
+
+---
+
+## Claude Desktop
+
+For the unofficial [claude-desktop-extra](https://github.com/patrickjaja/claude-desktop-extra)
+Linux build. `claude-desktop/cosmic-monochrome.jsonc` is one theme with both halves:
+Monochrome in dark mode and the same greys mirrored in light mode,
+so Claude's own Settings → Appearance toggle keeps working.
+Colours come from `cosmic/*.ron`, contrast-checked (text and button text
+4.5:1, accents 3:1).
+
+```bash
+./claude-desktop/install.sh
+```
+
+It copies the file into `~/.config/Claude/themes.d/`. Then press
+<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-monochrome**.
 
 ---
 
@@ -315,6 +336,9 @@ cd cosmic-monochrome-theme
 
 # optional extra chrome
 ./firefox/install.sh
+
+# claude desktop (claude-desktop-extra), then Ctrl+Shift+T
+./claude-desktop/install.sh
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
