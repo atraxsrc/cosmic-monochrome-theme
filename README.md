@@ -78,6 +78,10 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
+├── telegram
+│   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
+│   ├── cosmic-monochrome.tdesktop-theme  # built theme, open this in Telegram
+│   └── build.sh                 # rebuilds it, optionally with a wallpaper
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, monochrome ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
@@ -175,6 +179,31 @@ Colours come from `cosmic/*.ron`, contrast-checked (text and button text
 
 It copies the file into `~/.config/Claude/themes.d/`. Then press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-monochrome**.
+
+---
+
+## Telegram
+
+`telegram/cosmic-monochrome.tdesktop-theme` is a Telegram Desktop theme: void
+chat list and background, surface incoming and grey outgoing bubbles, the grey
+accent for links, unread badges and buttons (with void text on them). Group
+member names are greys too, like the rest of the rice. Text and badge colours
+are contrast-checked at 4.5:1 or better, except disabled menu items.
+
+Settings → Chat Settings → Chat wallpaper → **Choose from file** →
+`telegram/cosmic-monochrome.tdesktop-theme` → **Apply this theme**.
+
+The colours live in `telegram/colors.tdesktop-theme`, which is plain text;
+`build.sh` zips it with the chat background into the `.tdesktop-theme`. The
+background is the plain window colour; to put a wallpaper behind the chat instead
+(ImageMagick re-encodes it to a 2560px JPEG, Telegram caps theme files at 5 MB):
+
+```bash
+./telegram/build.sh --wallpaper backgrounds/monochrome-anime.png
+```
+
+Built against Telegram Desktop 7.3.1. Calls, group calls, statistics charts and
+premium badges keep Telegram's own colours.
 
 ---
 
@@ -349,6 +378,9 @@ cd cosmic-monochrome-theme
 
 # claude desktop (claude-desktop-extra), then Ctrl+Shift+T
 ./claude-desktop/install.sh
+
+# telegram desktop
+# Settings → Chat Settings → Chat wallpaper → Choose from file → telegram/cosmic-monochrome.tdesktop-theme
 
 # shell + terminal tools (see Terminal extras above)
 ./zsh/install.sh
