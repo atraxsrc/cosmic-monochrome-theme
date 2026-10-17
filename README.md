@@ -82,6 +82,11 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── colors.tdesktop-theme    # Telegram Desktop colour scheme (source)
 │   ├── cosmic-monochrome.tdesktop-theme  # built theme, open this in Telegram
 │   └── build.sh                 # rebuilds it, optionally with a wallpaper
+├── vscode
+│   ├── themes/                  # Cursor / VS Code colour theme
+│   ├── package.json             # extension manifest
+│   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
+│   └── README.md
 ├── scripts
 │   ├── update_system.sh         # nala + flatpak, monochrome ANSI
 │   └── switch.sh                # make this the active rice (see Switching rice)
@@ -179,6 +184,28 @@ Colours come from `cosmic/*.ron`, contrast-checked (text and button text
 
 It copies the file into `~/.config/Claude/themes.d/`. Then press
 <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>T</kbd> in Claude Desktop and pick **cosmic-monochrome**.
+
+---
+
+## Cursor editor
+
+`vscode/` is a colour theme for [Cursor](https://cursor.com). It is a plain
+VS Code theme extension, so VS Code and VSCodium take it too. Code is coloured
+the way Neovim is in this rice; the workbench takes the desktop's window and
+container colours, with the accent on the active tab, buttons and menu
+highlight, and the integrated terminal uses the COSMIC Terminal scheme. Cursor
+builds its Agent and chat panels from the same theme colours, so they follow
+along.
+
+```bash
+./vscode/install.sh
+```
+
+It packs `vscode/` into a `.vsix` and installs it with
+`cursor --install-extension`; run it again after editing the theme. Then press
+<kbd>Ctrl</kbd>+<kbd>K</kbd> <kbd>Ctrl</kbd>+<kbd>T</kbd> in Cursor and pick
+**Cosmic Monochrome**. Colours and contrast notes:
+[`vscode/README.md`](vscode/README.md).
 
 ---
 
@@ -378,6 +405,9 @@ cd cosmic-monochrome-theme
 
 # claude desktop (claude-desktop-extra), then Ctrl+Shift+T
 ./claude-desktop/install.sh
+
+# cursor editor, then Ctrl+K Ctrl+T → Cosmic Monochrome
+./vscode/install.sh
 
 # telegram desktop
 # Settings → Chat Settings → Chat wallpaper → Choose from file → telegram/cosmic-monochrome.tdesktop-theme
