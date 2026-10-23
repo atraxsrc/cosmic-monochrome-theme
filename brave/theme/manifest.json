@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "Cosmic Monochrome",
+  "version": "1.0",
+  "description": "Pure greyscale dark theme from the COSMIC Monochrome rice: grey icons, one bright accent.",
+  "icons": {
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "theme": {
+    "colors": {
+      "frame": [17, 17, 17],
+      "frame_inactive": [17, 17, 17],
+      "frame_incognito": [17, 17, 17],
+      "frame_incognito_inactive": [17, 17, 17],
+      "background_tab": [17, 17, 17],
+      "background_tab_inactive": [17, 17, 17],
+      "background_tab_incognito": [17, 17, 17],
+      "background_tab_incognito_inactive": [17, 17, 17],
+      "toolbar": [28, 28, 28],
+      "tab_text": [221, 221, 221],
+      "tab_background_text": [170, 170, 170],
+      "tab_background_text_inactive": [170, 170, 170],
+      "tab_background_text_incognito": [170, 170, 170],
+      "tab_background_text_incognito_inactive": [170, 170, 170],
+      "bookmark_text": [204, 204, 204],
+      "toolbar_button_icon": [170, 170, 170],
+      "omnibox_background": [46, 46, 46],
+      "omnibox_text": [204, 204, 204],
+      "ntp_background": [17, 17, 17],
+      "ntp_text": [204, 204, 204],
+      "ntp_link": [221, 221, 221]
+    }
+  }
+}
