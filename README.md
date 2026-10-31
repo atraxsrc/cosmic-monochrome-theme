@@ -43,6 +43,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 .
 ├── assets
 │   ├── cursors/                 # cursor previews
+│   ├── cosmic-term/             # scheme previews for cosmic-term/README.md
 │   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the reaper on the bare desktop
@@ -154,6 +155,11 @@ The desktop `.ron` does not colour ANSI text.
 3. View → Settings → Appearance → Color scheme (dark) → **Monochrome Dark**
 
 If a profile is set as default, set the scheme on that profile too or the dropdown will look like it did nothing.
+
+If edge grey is not the plain text you want, there are five other variants
+with the same ANSI colours, from Mute ![#828282](https://placehold.co/12x12/828282/828282.png) `#828282` to
+Higher ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD`. Previews and which to
+pick: [`cosmic-term/README.md`](cosmic-term/README.md).
 
 ---
 
