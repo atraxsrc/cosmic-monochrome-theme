@@ -2,6 +2,8 @@
 
 # COSMIC · Monochrome
 
+![Monochrome palette](assets/palette.png)
+
 Pop!_OS 24.04 on COSMIC in grays only: desktop, terminal, shell, Firefox, Brave, cursor.
 
 ![Pop!_OS](https://img.shields.io/badge/Pop!_OS-24.04_LTS-aaaaaa?style=for-the-badge&logo=popos&logoColor=white)
@@ -41,6 +43,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 .
 ├── assets
 │   ├── cursors/                 # cursor previews
+│   ├── palette.png              # the 16 terminal colours, under the title
 │   ├── screenshot.png           # README screenshot
 │   └── wallpaper.png            # the reaper on the bare desktop
 ├── backgrounds/                 # wallpapers, monochrome-<subject>.png (see Icons and wallpaper)
