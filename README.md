@@ -22,14 +22,14 @@ Sourced from the monochrome dark slots in
 
 | Role | Color | Hex |
 |------|-------|-----|
-| Background | ![#111111](https://placehold.co/12x12/111111/111111.png) Void | `#111111` |
-| Elevated | ![#1c1c1c](https://placehold.co/12x12/1c1c1c/1c1c1c.png) Surface | `#1c1c1c` |
-| Text | ![#828282](https://placehold.co/12x12/828282/828282.png) Mute | `#828282` |
-| Primary | ![#aaaaaa](https://placehold.co/12x12/aaaaaa/aaaaaa.png) Accent | `#aaaaaa` |
-| Secondary | ![#a7a7a7](https://placehold.co/12x12/a7a7a7/a7a7a7.png) Control | `#a7a7a7` |
-| Border | ![#bdbdbd](https://placehold.co/12x12/bdbdbd/bdbdbd.png) Edge | `#bdbdbd` |
-| Success | ![#cccccc](https://placehold.co/12x12/cccccc/cccccc.png) High | `#cccccc` |
-| Error | ![#dddddd](https://placehold.co/12x12/dddddd/dddddd.png) Higher | `#dddddd` |
+| Background | ![#111111](https://placehold.co/12x12/111111/111111.png) Void | ![#111111](https://placehold.co/12x12/111111/111111.png) `#111111` |
+| Elevated | ![#1c1c1c](https://placehold.co/12x12/1c1c1c/1c1c1c.png) Surface | ![#1c1c1c](https://placehold.co/12x12/1c1c1c/1c1c1c.png) `#1c1c1c` |
+| Text | ![#828282](https://placehold.co/12x12/828282/828282.png) Mute | ![#828282](https://placehold.co/12x12/828282/828282.png) `#828282` |
+| Primary | ![#aaaaaa](https://placehold.co/12x12/aaaaaa/aaaaaa.png) Accent | ![#aaaaaa](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#aaaaaa` |
+| Secondary | ![#a7a7a7](https://placehold.co/12x12/a7a7a7/a7a7a7.png) Control | ![#a7a7a7](https://placehold.co/12x12/a7a7a7/a7a7a7.png) `#a7a7a7` |
+| Border | ![#bdbdbd](https://placehold.co/12x12/bdbdbd/bdbdbd.png) Edge | ![#bdbdbd](https://placehold.co/12x12/bdbdbd/bdbdbd.png) `#bdbdbd` |
+| Success | ![#cccccc](https://placehold.co/12x12/cccccc/cccccc.png) High | ![#cccccc](https://placehold.co/12x12/cccccc/cccccc.png) `#cccccc` |
+| Error | ![#dddddd](https://placehold.co/12x12/dddddd/dddddd.png) Higher | ![#dddddd](https://placehold.co/12x12/dddddd/dddddd.png) `#dddddd` |
 
 There is no hue. Status colours are lighter grays, not green / red.
 
@@ -303,8 +303,8 @@ In `~/.zshrc` keep `ZSH_THEME=""` and
 
 File names are coloured by `LS_COLORS` from `zsh/monochrome.zsh`;
 `lsd/colors.yaml` colours the other columns with the 256-colour grays nearest
-the palette (253 `#dddddd`, 252 `#cccccc`, 250 `#bdbdbd`, 248 `#aaaaaa`,
-244 `#828282`, 241 `#636363`). lsd 1.0.0 does not accept `#hex` there.
+the palette (253 ![#dddddd](https://placehold.co/12x12/dddddd/dddddd.png) `#dddddd`, 252 ![#cccccc](https://placehold.co/12x12/cccccc/cccccc.png) `#cccccc`, 250 ![#bdbdbd](https://placehold.co/12x12/bdbdbd/bdbdbd.png) `#bdbdbd`, 248 ![#aaaaaa](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#aaaaaa`,
+244 ![#828282](https://placehold.co/12x12/828282/828282.png) `#828282`, 241 ![#636363](https://placehold.co/12x12/636363/636363.png) `#636363`). lsd 1.0.0 does not accept `#hex` there.
 
 ```bash
 ./lsd/install.sh
@@ -373,7 +373,7 @@ Previews, what the script touches, how to undo it and how the colours are made:
 Icons: **Cosmic-Monochrome**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Silver** `#AAAAAA` (default), **White** `#DDDDDD` and **Dark** `#2A2A2A` with light symbols.
+three colors: **Silver** ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` (default), **White** ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` and **Dark** ![#2A2A2A](https://placehold.co/12x12/2a2a2a/2a2a2a.png) `#2A2A2A` with light symbols.
 
 ![Cosmic-Monochrome folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-Monochrome.png)
 

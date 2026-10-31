@@ -9,15 +9,15 @@ Stylesheets:
 
 | Hex       | Role                      |
 |-----------|---------------------------|
-| `#1C1C1C` | Panels, menus             |
-| `#313131` | Menu hover row (accent tinted into the panel) |
-| `#3B3B3B` | Menu pressed row          |
-| `#484848` | Separators, menu border   |
-| `#AAAAAA` | Accent, URL bar border, hover rail |
-| `#CCCCCC` | Menu text, button hover, new tab active (where DarkGold uses cream) |
-| `#BDBDBD` | New tab links (where DarkGold uses brass) |
-| `#DDDDDD` | Hover text                |
-| `#111111` | Text on the accent        |
+| ![#1C1C1C](https://placehold.co/12x12/1c1c1c/1c1c1c.png) `#1C1C1C` | Panels, menus             |
+| ![#313131](https://placehold.co/12x12/313131/313131.png) `#313131` | Menu hover row (accent tinted into the panel) |
+| ![#3B3B3B](https://placehold.co/12x12/3b3b3b/3b3b3b.png) `#3B3B3B` | Menu pressed row          |
+| ![#484848](https://placehold.co/12x12/484848/484848.png) `#484848` | Separators, menu border   |
+| ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` | Accent, URL bar border, hover rail |
+| ![#CCCCCC](https://placehold.co/12x12/cccccc/cccccc.png) `#CCCCCC` | Menu text, button hover, new tab active (where DarkGold uses cream) |
+| ![#BDBDBD](https://placehold.co/12x12/bdbdbd/bdbdbd.png) `#BDBDBD` | New tab links (where DarkGold uses brass) |
+| ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` | Hover text                |
+| ![#111111](https://placehold.co/12x12/111111/111111.png) `#111111` | Text on the accent        |
 
 ## Structure
 
@@ -44,12 +44,12 @@ Two layers, use one or both:
 
 Same colour keys and roles as DarkGold's Firefox theme. The palette has no hue,
 so calm and loud are two levels of grey: icons take the calm accent
-(`#AAAAAA`, the rice's accent; gold in DarkGold), and everything "hot" (tab
+(![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA`, the rice's accent; gold in DarkGold), and everything "hot" (tab
 line, pressed button, menu and sidebar selection, loading) takes the loud one
-(`#DDDDDD`, the palette's brightest accent slot; coral in DarkGold). The
-stylesheets keep `#AAAAAA` for hover and focus, like DarkGold's keep gold.
+(![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD`, the palette's brightest accent slot; coral in DarkGold). The
+stylesheets keep ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` for hover and focus, like DarkGold's keep gold.
 One extra key, `toolbar_field_border_focus`, pins the focused URL bar ring to
-`#DDDDDD` so it does not fall back to the desktop accent when
+![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` so it does not fall back to the desktop accent when
 `widget.non-native-theme.use-theme-accent` is on (the Firefox default on
 Linux). Two more, `toolbar_field_highlight` and `toolbar_field_highlight_text`,
 colour selected text in the URL bar the same way, as DarkGold does. Every
@@ -58,13 +58,13 @@ line clear 3:1.
 
 | Hex       | Where in the theme                          |
 |-----------|---------------------------------------------|
-| `#111111` | Frame, new tab, text on bright selections   |
-| `#1C1C1C` | Toolbar, menus                              |
-| `#2E2E2E` | URL bar field, button hover, sidebar border |
-| `#CCCCCC` | Body text                                   |
-| `#828282` | Inactive tab text, menu border              |
-| `#AAAAAA` | Icons                                       |
-| `#DDDDDD` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
+| ![#111111](https://placehold.co/12x12/111111/111111.png) `#111111` | Frame, new tab, text on bright selections   |
+| ![#1C1C1C](https://placehold.co/12x12/1c1c1c/1c1c1c.png) `#1C1C1C` | Toolbar, menus                              |
+| ![#2E2E2E](https://placehold.co/12x12/2e2e2e/2e2e2e.png) `#2E2E2E` | URL bar field, button hover, sidebar border |
+| ![#CCCCCC](https://placehold.co/12x12/cccccc/cccccc.png) `#CCCCCC` | Body text                                   |
+| ![#828282](https://placehold.co/12x12/828282/828282.png) `#828282` | Inactive tab text, menu border              |
+| ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` | Icons                                       |
+| ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` | Focused URL bar ring and text selection, tab line, pressed button, menu and sidebar selection, loading, attention |
 
 Build the package:
 
@@ -111,8 +111,8 @@ To undo: delete the two files and restart, or run the Tokyo Night
 - **Never set `--panel-*` or `--arrowpanel-*` on `:root`.** Those variables leak
   into the toolbar and blank the URL bar. They stay on the popup elements.
 - **Context menus do not get an extra element border.** A second stroke made
-  the right-click panel look detached. Hover is a lighter `#313131` row
-  with a 3px `#AAAAAA` rail on the left, not a full ring.
+  the right-click panel look detached. Hover is a lighter ![#313131](https://placehold.co/12x12/313131/313131.png) `#313131` row
+  with a 3px ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` rail on the left, not a full ring.
 - **Native menu styling is switched off** (`appearance: none`) on menus and
   menu rows. Without it the COSMIC/GTK hover paints over the colours above.
 - **`[_moz-menuactive="true"]` is required.** Firefox marks the active

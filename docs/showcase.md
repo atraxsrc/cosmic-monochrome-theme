@@ -8,19 +8,19 @@ describing itself, written in Markdown and rendered by **Postilla**.
 
 ## Palette
 
-Every text colour is checked against the window background `#111111`.
+Every text colour is checked against the window background ![#111111](https://placehold.co/12x12/111111/111111.png) `#111111`.
 
 | Role | Hex | Contrast on background |
 |------|-----|------------------------|
-| Text | `#828282` | 4.9:1 |
-| Accent gray, accent | `#AAAAAA` | 8.1:1 |
-| Control | `#A7A7A7` | 7.8:1 |
-| Edge, borders | `#BDBDBD` | 10.1:1 |
-| High, success | `#CCCCCC` | 11.8:1 |
-| Higher, error | `#DDDDDD` | 13.9:1 |
-| Dim | `#636363` | 3.1:1 |
+| Text | ![#828282](https://placehold.co/12x12/828282/828282.png) `#828282` | 4.9:1 |
+| Accent gray, accent | ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` | 8.1:1 |
+| Control | ![#A7A7A7](https://placehold.co/12x12/a7a7a7/a7a7a7.png) `#A7A7A7` | 7.8:1 |
+| Edge, borders | ![#BDBDBD](https://placehold.co/12x12/bdbdbd/bdbdbd.png) `#BDBDBD` | 10.1:1 |
+| High, success | ![#CCCCCC](https://placehold.co/12x12/cccccc/cccccc.png) `#CCCCCC` | 11.8:1 |
+| Higher, error | ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` | 13.9:1 |
+| Dim | ![#636363](https://placehold.co/12x12/636363/636363.png) `#636363` | 3.1:1 |
 
-Containers sit one step away from the background at `#1C1C1C`, which is
+Containers sit one step away from the background at ![#1C1C1C](https://placehold.co/12x12/1c1c1c/1c1c1c.png) `#1C1C1C`, which is
 what frosted glass blurs into.
 
 ## Where the colours go

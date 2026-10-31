@@ -6,11 +6,11 @@ rice's icon colours: one per folder colour of the
 [Cosmic-Monochrome](https://github.com/atraxsrc/cosmic-icon-themes) icon pack, **Silver**, **White**, **Dark**.
 All patched so they work in COSMIC's own apps.
 
-| Variant | Preview | Body | Contrast on `#111111` | Goes with |
+| Variant | Preview | Body | Contrast on ![#111111](https://placehold.co/12x12/111111/111111.png) `#111111` | Goes with |
 | ------- | ------- | ---- | ------------------- | --------- |
-| **Silver** (default) | ![](../assets/cursors/Oxygen-Monochrome-Silver.png) | `#AAAAAA` | 8.1:1 | Silver folders |
-| **White** | ![](../assets/cursors/Oxygen-Monochrome-White.png) | `#DDDDDD` | 13.9:1 | White folders |
-| **Dark** | ![](../assets/cursors/Oxygen-Monochrome-Dark.png) | `#2A2A2A` | 1.3:1 | Dark folders |
+| **Silver** (default) | ![](../assets/cursors/Oxygen-Monochrome-Silver.png) | ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` | 8.1:1 | Silver folders |
+| **White** | ![](../assets/cursors/Oxygen-Monochrome-White.png) | ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` | 13.9:1 | White folders |
+| **Dark** | ![](../assets/cursors/Oxygen-Monochrome-Dark.png) | ![#2A2A2A](https://placehold.co/12x12/2a2a2a/2a2a2a.png) `#2A2A2A` | 1.3:1 | Dark folders |
 
 Each variant is a normal folder here (`Oxygen-Monochrome-<Variant>/index.theme` + `cursors/`),
 already fixed for COSMIC. Nothing is downloaded at install time.
