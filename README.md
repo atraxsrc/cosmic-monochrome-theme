@@ -397,8 +397,7 @@ the Harbor Dark reaper and Hyundai blueprint, the COSMIC astronaut, the samurai,
 sushi switch, geisha, JS mug and neon street from the Tokyo Night set, The Greek
 eagle and ink portrait, and three new scenes: city, panel and tower.
 The reaper is the one in the screenshot.
-The subjects come from [HANCORE-linux](https://github.com/HANCORE-linux) (MIT) and
-[cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers); each was rendered again in this palette, then upscaled.
+The subjects come from [cool-wallpapers](https://github.com/atraxsrc/cool-wallpapers) (MIT); each was rendered again in this palette, then upscaled.
 
 Settings → Wallpaper → Add image → a file from `backgrounds/`.
 
