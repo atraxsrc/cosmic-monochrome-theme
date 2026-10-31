@@ -35,7 +35,7 @@ done
 R="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 C="${XDG_CONFIG_HOME:-$HOME/.config}"
 # every rice's LazyVim spec, plus the old hand-installed Harbor Dark one
-RICES="darkgold whitegold tokyonight tokyoday ember emberday monochrome noir dossier harbordark"
+RICES="darkgold whitegold tokyonight tokyoday ember emberday monochrome monochromeday noir dossier harbordark"
 if [ "$MODE" = dark ]; then other=light; Mode=Dark; else other=dark; Mode=Light; fi
 icons_missing=""
 cd "$R"
