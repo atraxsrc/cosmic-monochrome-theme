@@ -1,0 +1,243 @@
+/**
+ * @name Cosmic Monochrome
+ * @author atraxsrc
+ * @description Monochrome (dark) / Monochrome Day (light), the COSMIC rice pair.
+ * @version 1.0.0
+ * @source https://github.com/atraxsrc/cosmic-monochrome-theme
+ */
+
+/* cosmic-monochrome - Discord theme for Vencord / Vesktop (MIT). Only the colour
+ * variables: Discord's layout stays. With Appearance -> Theme -> "Sync with
+ * computer" it follows COSMIC's Dark / Light toggle between the two halves.
+ * The same file ships in both repos.
+ *
+ * Install: ./discord/install.sh copies it to ~/.config/Vencord/themes/ and
+ * ~/.config/vesktop/themes/, then Settings -> Vencord -> Themes -> tick it.
+ * Colours come from the rices' cosmic/*.ron palettes; edit the palette,
+ * not this file. */
+
+.theme-dark, .theme-darker, .theme-midnight {
+  /* Monochrome */
+  --background-primary: #111111;
+  --background-secondary: #1C1C1C;
+  --background-secondary-alt: #2A2A2A;
+  --background-tertiary: #111111;
+  --background-accent: #2A2A2A;
+  --background-floating: #1C1C1C;
+  --background-mobile-primary: #111111;
+  --background-mobile-secondary: #1C1C1C;
+  --background-modifier-hover: #1C1C1C99;
+  --background-modifier-active: #2A2A2A;
+  --background-modifier-selected: #2A2A2A;
+  --background-modifier-accent: #393939;
+  --background-message-hover: #1C1C1C80;
+  --background-mentioned: #AAAAAA20;
+  --background-mentioned-hover: #AAAAAA30;
+  --channeltextarea-background: #1C1C1C;
+  --deprecated-card-bg: #1C1C1C;
+  --deprecated-quickswitcher-input-background: #1C1C1C;
+  --input-background: #1C1C1C;
+  --modal-background: #111111;
+  --modal-footer-background: #1C1C1C;
+  --activity-card-background: #1C1C1C;
+
+  /* 2025 layout names */
+  --bg-base-primary: #111111;
+  --bg-base-secondary: #1C1C1C;
+  --bg-base-tertiary: #111111;
+  --bg-surface-raised: #1C1C1C;
+  --bg-surface-overlay: #2A2A2A;
+  --bg-mod-faint: #1C1C1C66;
+  --bg-mod-subtle: #2A2A2A99;
+  --bg-mod-strong: #393939;
+  --background-base-low: #111111;
+  --background-base-lower: #111111;
+  --background-base-lowest: #111111;
+  --background-surface-high: #1C1C1C;
+  --background-surface-higher: #2A2A2A;
+  --background-surface-highest: #393939;
+  --border-subtle: #393939;
+  --border-normal: #484848;
+  --border-strong: #828282;
+  --border-faint: #2A2A2A;
+
+  --text-normal: #BDBDBD;
+  --text-muted: #A7A7A7;
+  --text-link: #AAAAAA;
+  --text-link-low-saturation: #AAAAAA;
+  --text-positive: #CCCCCC;
+  --text-warning: #AAAAAA;
+  --text-danger: #DDDDDD;
+  --text-brand: #AAAAAA;
+  --header-primary: #BDBDBD;
+  --header-secondary: #A7A7A7;
+  --interactive-normal: #A7A7A7;
+  --interactive-hover: #BDBDBD;
+  --interactive-active: #DDDDDD;
+  --interactive-muted: #636363;
+  --channels-default: #A7A7A7;
+  --text-default: #BDBDBD;
+  --text-secondary: #A7A7A7;
+  --text-tertiary: #828282;
+  --text-strong: #DDDDDD;
+  --text-feedback-positive: #CCCCCC;
+  --text-feedback-warning: #AAAAAA;
+  --text-feedback-critical: #DDDDDD;
+  --text-primary: #BDBDBD;
+
+  --brand-500: #AAAAAA;
+  --brand-560: #AAAAAA;
+  --brand-600: #828282;
+  --brand-experiment: #AAAAAA;
+  --brand-experiment-560: #AAAAAA;
+  --brand-experiment-600: #828282;
+  --control-brand-foreground: #AAAAAA;
+  --control-brand-foreground-new: #AAAAAA;
+  --mention-foreground: #AAAAAA;
+  --mention-background: #AAAAAA20;
+  --status-positive: #CCCCCC;
+  --status-positive-background: #CCCCCC;
+  --status-positive-text: #111111;
+  --status-warning: #AAAAAA;
+  --status-warning-background: #AAAAAA;
+  --status-warning-text: #111111;
+  --status-danger: #DDDDDD;
+  --status-danger-background: #DDDDDD;
+  --status-danger-text: #111111;
+  --info-positive-foreground: #CCCCCC;
+  --info-warning-foreground: #AAAAAA;
+  --info-danger-foreground: #DDDDDD;
+  --button-positive-background: #CCCCCC;
+  --button-positive-background-hover: #DDDDDD;
+  --button-danger-background: #DDDDDD;
+  --button-danger-background-hover: #DDDDDD;
+  --button-secondary-background: #2A2A2A;
+  --button-secondary-background-hover: #393939;
+  --button-secondary-background-active: #484848;
+  --button-outline-brand-border: #AAAAAA;
+  --button-outline-brand-text: #AAAAAA;
+
+  --scrollbar-auto-thumb: #484848;
+  --scrollbar-auto-track: #111111;
+  --scrollbar-thin-thumb: #484848;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #484848;
+  --scrollbar-auto-scrollbar-color-track: #111111;
+  --focus-primary: #AAAAAA;
+  --spoiler-background: #2A2A2A;
+  --spoiler-hover-background: #393939;
+  --text-code: #AAAAAA;
+}
+
+.theme-light {
+  /* Monochrome Day */
+  --background-primary: #E6E6E6;
+  --background-secondary: #F1F1F1;
+  --background-secondary-alt: #DBDBDB;
+  --background-tertiary: #DBDBDB;
+  --background-accent: #DBDBDB;
+  --background-floating: #F1F1F1;
+  --background-mobile-primary: #E6E6E6;
+  --background-mobile-secondary: #F1F1F1;
+  --background-modifier-hover: #F1F1F199;
+  --background-modifier-active: #DBDBDB;
+  --background-modifier-selected: #DBDBDB;
+  --background-modifier-accent: #C0C0C0;
+  --background-message-hover: #F1F1F180;
+  --background-mentioned: #5C5C5C20;
+  --background-mentioned-hover: #5C5C5C30;
+  --channeltextarea-background: #F1F1F1;
+  --deprecated-card-bg: #F1F1F1;
+  --deprecated-quickswitcher-input-background: #F1F1F1;
+  --input-background: #F1F1F1;
+  --modal-background: #E6E6E6;
+  --modal-footer-background: #F1F1F1;
+  --activity-card-background: #F1F1F1;
+
+  /* 2025 layout names */
+  --bg-base-primary: #E6E6E6;
+  --bg-base-secondary: #F1F1F1;
+  --bg-base-tertiary: #DBDBDB;
+  --bg-surface-raised: #F1F1F1;
+  --bg-surface-overlay: #DBDBDB;
+  --bg-mod-faint: #F1F1F166;
+  --bg-mod-subtle: #DBDBDB99;
+  --bg-mod-strong: #C0C0C0;
+  --background-base-low: #E6E6E6;
+  --background-base-lower: #DBDBDB;
+  --background-base-lowest: #DBDBDB;
+  --background-surface-high: #F1F1F1;
+  --background-surface-higher: #DBDBDB;
+  --background-surface-highest: #C0C0C0;
+  --border-subtle: #C0C0C0;
+  --border-normal: #C0C0C0;
+  --border-strong: #616161;
+  --border-faint: #DBDBDB;
+
+  --text-normal: #1A1A1A;
+  --text-muted: #5C5C5C;
+  --text-link: #5C5C5C;
+  --text-link-low-saturation: #5C5C5C;
+  --text-positive: #515151;
+  --text-warning: #5C5C5C;
+  --text-danger: #424242;
+  --text-brand: #5C5C5C;
+  --header-primary: #1A1A1A;
+  --header-secondary: #5C5C5C;
+  --interactive-normal: #5C5C5C;
+  --interactive-hover: #1A1A1A;
+  --interactive-active: #424242;
+  --interactive-muted: #818181;
+  --channels-default: #5C5C5C;
+  --text-default: #1A1A1A;
+  --text-secondary: #5C5C5C;
+  --text-tertiary: #616161;
+  --text-strong: #424242;
+  --text-feedback-positive: #515151;
+  --text-feedback-warning: #5C5C5C;
+  --text-feedback-critical: #424242;
+  --text-primary: #1A1A1A;
+
+  --brand-500: #5C5C5C;
+  --brand-560: #5C5C5C;
+  --brand-600: #282828;
+  --brand-experiment: #5C5C5C;
+  --brand-experiment-560: #5C5C5C;
+  --brand-experiment-600: #282828;
+  --control-brand-foreground: #5C5C5C;
+  --control-brand-foreground-new: #5C5C5C;
+  --mention-foreground: #5C5C5C;
+  --mention-background: #5C5C5C20;
+  --status-positive: #515151;
+  --status-positive-background: #515151;
+  --status-positive-text: #E6E6E6;
+  --status-warning: #5C5C5C;
+  --status-warning-background: #5C5C5C;
+  --status-warning-text: #E6E6E6;
+  --status-danger: #424242;
+  --status-danger-background: #424242;
+  --status-danger-text: #E6E6E6;
+  --info-positive-foreground: #515151;
+  --info-warning-foreground: #5C5C5C;
+  --info-danger-foreground: #424242;
+  --button-positive-background: #515151;
+  --button-positive-background-hover: #515151;
+  --button-danger-background: #424242;
+  --button-danger-background-hover: #424242;
+  --button-secondary-background: #DBDBDB;
+  --button-secondary-background-hover: #C0C0C0;
+  --button-secondary-background-active: #C0C0C0;
+  --button-outline-brand-border: #5C5C5C;
+  --button-outline-brand-text: #5C5C5C;
+
+  --scrollbar-auto-thumb: #C0C0C0;
+  --scrollbar-auto-track: #E6E6E6;
+  --scrollbar-thin-thumb: #C0C0C0;
+  --scrollbar-thin-track: transparent;
+  --scrollbar-auto-scrollbar-color-thumb: #C0C0C0;
+  --scrollbar-auto-scrollbar-color-track: #E6E6E6;
+  --focus-primary: #5C5C5C;
+  --spoiler-background: #DBDBDB;
+  --spoiler-hover-background: #C0C0C0;
+  --text-code: #5C5C5C;
+}
