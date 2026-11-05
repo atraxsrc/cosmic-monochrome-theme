@@ -122,6 +122,8 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── config.yaml              # theme: custom
 │   ├── colors.yaml              # permission / size / date / git columns
 │   └── install.sh
+├── notesnook
+│   └── cosmic-monochrome.json   # Notesnook theme, Monochrome (dark)
 ├── nvim                         # Neovim colorscheme, LazyVim spec, RON syntax, install.sh
 ├── obsidian
 │   ├── cosmic-monochrome.css    # CSS snippet, Monochrome (dark) + Monochrome Day (light)
@@ -593,6 +595,22 @@ in ![#CCCCCC](https://placehold.co/12x12/cccccc/cccccc.png) `#CCCCCC`. The same 
 
 It copies the file into the vault's `.obsidian/snippets/`. Snippets are per
 vault, so run it once per vault.
+
+---
+
+## Notesnook
+
+`notesnook/cosmic-monochrome.json` is a [Notesnook](https://notesnook.com/) theme for Monochrome,
+built from the same palette as the Obsidian snippet: window, list and sidebar
+backgrounds, text, accent, selection and the error / success colours. A
+Notesnook theme holds one colour scheme, so the Monochrome Day half ships as
+`notesnook/cosmic-monochromeday.json` in cosmic-monochromeday-theme; load both if you switch between
+dark and light.
+
+```text
+Notesnook → Settings → Appearance → Themes → Load from file
+→ pick notesnook/cosmic-monochrome.json → Set as default
+```
 
 ---
 
