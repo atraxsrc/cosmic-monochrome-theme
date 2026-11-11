@@ -198,7 +198,7 @@ Firefox and the shell layer do not follow the toggle; those are per-rice files.
 | Where | Setting |
 |-------|---------|
 | Fonts | Interface `Maple Mono Normal`, monospace `Maple Mono Normal NFM` |
-| Icons | Cosmic-Monochrome-Silver |
+| Icons | Cosmic-Monochrome-Dark |
 | Windows | Minimize / maximize buttons hidden, theme applied to GNOME apps |
 | Terminal | Maple Mono 15 (weights 500 / bold 800 / dim 300), 77% opacity, no header bar, Monochrome Dark |
 
@@ -673,13 +673,13 @@ Previews, what the script touches, how to undo it and how the colours are made:
 Icons: **Cosmic-Monochrome**, the [Kanagawa icons](https://github.com/Fausto-Korpsvart/Kanagawa-GKT-Theme/tree/main/icons/Kanagawa)
 by Fausto Korpsvart recolored to this palette in
 [cosmic-icon-themes](https://github.com/atraxsrc/cosmic-icon-themes). Folders come in
-three colors: **Silver** ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA` (default), **White** ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` and **Dark** ![#2A2A2A](https://placehold.co/12x12/2a2a2a/2a2a2a.png) `#2A2A2A` with light symbols.
+three colors: **Silver** ![#AAAAAA](https://placehold.co/12x12/aaaaaa/aaaaaa.png) `#AAAAAA`, **White** ![#DDDDDD](https://placehold.co/12x12/dddddd/dddddd.png) `#DDDDDD` and **Dark** ![#2A2A2A](https://placehold.co/12x12/2a2a2a/2a2a2a.png) `#2A2A2A` (default) with light symbols.
 
 ![Cosmic-Monochrome folder colors](https://raw.githubusercontent.com/atraxsrc/cosmic-icon-themes/main/previews/Cosmic-Monochrome.png)
 
 ```bash
-./icons/install.sh                 # Silver folders
-./icons/install.sh --variant Dark  # or White
+./icons/install.sh                   # Dark folders
+./icons/install.sh --variant Silver  # or White
 ```
 
 It downloads the pack from the latest cosmic-icon-themes release, checks its SHA256,
