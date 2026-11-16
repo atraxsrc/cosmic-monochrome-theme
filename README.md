@@ -144,8 +144,7 @@ There is no hue. Status colours are lighter grays, not green / red.
 │   ├── install.sh               # packs a .vsix, installs it with cursor --install-extension
 │   └── README.md
 ├── scripts
-│   ├── update_system.sh         # nala + flatpak, monochrome ANSI
-│   └── switch.sh                # make this the active rice (see Switching rice)
+│   └── update_system.sh         # nala + flatpak, monochrome ANSI
 ├── wezterm
 │   ├── monochrome.lua           # WezTerm colours, config.colors = require("monochrome")
 │   └── install.sh
@@ -346,15 +345,6 @@ nala + flatpak updater. Headers, success, and the figlet ramp are gray.
 ```bash
 chmod +x scripts/update_system.sh
 ./scripts/update_system.sh
-```
-
-### `switch.sh`
-
-Makes this the active rice, coming from any other `cosmic-*-theme` rice. See
-[Switching rice](#switching-rice).
-
-```bash
-./scripts/switch.sh
 ```
 
 ---
@@ -774,13 +764,13 @@ mkdir -p ~/.config/btop/themes && cp btop/Monochrome.theme ~/.config/btop/themes
 
 The installers replace what they own (with a `*.bak` copy), but some things
 pile up instead: shell layers in `~/.zshrc`, LazyVim specs, the updater link and
-btop's theme setting. `scripts/switch.sh` makes Monochrome the active rice, coming
-from any other `cosmic-*-theme` rice, and tidies those up. Every rice repo ships
-the same script.
+btop's theme setting. [themebox](https://github.com/atraxsrc/themebox) makes
+Monochrome the active rice, coming from any other `cosmic-*-theme` rice, and
+tidies those up. It installs with one command, see its README.
 
 ```bash
-./scripts/switch.sh               # switch, icons included
-./scripts/switch.sh --keep-icons  # leave the current icon theme alone
+themebox switch monochrome               # switch, icons included
+themebox switch monochrome --keep-icons  # leave the current icon theme alone
 ```
 
 It backs up every file it replaces, then:
@@ -822,7 +812,7 @@ left by hand. Add `--keep-icons` to keep one icon colour across the pair.
 
 Monochrome has no light half, so every switch to or from it is a full one.
 
-Leaving Monochrome is the next rice's `./scripts/switch.sh`. `./cursors/uninstall.sh`
+Leaving Monochrome is `themebox switch <the next rice>`. `./cursors/uninstall.sh`
 puts the Pop cursor back.
 
 ---
@@ -850,5 +840,8 @@ puts the Pop cursor back.
 
 ## License
 
-MIT. The cursor artwork keeps the terms of KDE's Oxygen project, see
-[`cursors/README.md`](cursors/README.md).
+MIT for the configs and scripts. The cursor artwork keeps the terms of KDE's
+Oxygen project, see [`cursors/README.md`](cursors/README.md). The wallpapers in
+`backgrounds/` are recoloured from other people's artwork and keep their
+original terms unless Credits says otherwise; open an issue to have one credited
+or removed.
